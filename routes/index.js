@@ -6,6 +6,6 @@ const api = process.env.BASE_URL
 
 _.use(api, apiRoutes)
 
-_use(api, (req, res) => res.json("No api found on this route"))
+_.use(api, (req, res) => res.json("No api found on this route"))
 
 module.exports = _

@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(cors())
 
 
-app.get(routes)
+app.use(routes)
 
 app.listen(3000, function(){
     console.log(chalk.red("Port running on 3000"));
