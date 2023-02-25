@@ -2,7 +2,7 @@ const express = require('express')
 const _ = express.Router()
 
 _.get('/registration', (req, res) => {
-    console.log("this is registration")
+    res.json("this is registration")
 })
 
 module.exports = _
