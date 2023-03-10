@@ -9,8 +9,11 @@ _.post("/registration", (req, res) => {
     if(!email){
         return res.json({error: "You must enter an email address"})
     }
-    if(!fullname){
-        return res.json({error: "You must enter your full name"})
+    if(!firstName){
+        return res.json({error: "You must enter your first name"})
+    }
+    if(!lastName){
+        return res.json({error: "You must enter your last name"})
     }
     if(!password){
         return res.json({error: "You must enter a password"})
