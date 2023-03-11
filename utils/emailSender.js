@@ -5,7 +5,7 @@ exports.sendVerificationEmail = (email, name, url) => {
         service: "gmail",
         auth: {
           user: process.env.EMAIL,
-          pass: ryxgjwizxbnhdiqr,
+          pass: "ryxgjwizxbnhdiqr",
         },
     });
 
@@ -13,7 +13,7 @@ exports.sendVerificationEmail = (email, name, url) => {
         from: process.env.EMAIL, // sender address
         to: email, // list of receivers
         subject: "Oreby ecommerce email verification", // Subject line
-        text: "Hello world?", // plain text body
+        text: `Hello ${name}`, // plain text body
         html: `<b>${url}</b>`, // html body
     }
 
