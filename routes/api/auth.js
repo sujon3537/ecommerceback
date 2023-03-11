@@ -26,6 +26,8 @@ _.post("/registration", (req, res) => {
         lastName,
         password
     })
+
+    user.save()
     res.json(user)
 })
 
